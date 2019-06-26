@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    .caculator {
+        position: relative;
+        width: 220px;
+        height: 250px;
+    }
+    .input {
+        text-align: right;
+        height: 30px;
+        width: 200px;
+    }
+    .phimso{
+        color: darkgreen;
+        width: 30px;
+        height: 30px;
+        margin: 11px;
+    }
+#
+</style>
+<body>
+<fieldset class="caculator">
+    <fieldset class="input"> <p class="input" id="text" type="text"> </p> </fieldset>
+<table>
+    <tr>
+        <td><input id="1" class="phimso" type="button" value="1" onclick="click1()"></td>
+        <td><input id="2" class="phimso" type="button" value="2" onclick="click2()"></td>
+        <td><input id="3" class="phimso" type="button" value="3" onclick="click3()"></td>
+        <td><input id="cong" class="phimso" type="button" value="+" onclick="cong()"></td>
+    </tr>
+    <tr>
+        <td><input id="4" class="phimso" type="button" value="4" onclick="click4()"></td>
+        <td><input id="5" class="phimso" type="button" value="5" onclick="click5()"></td>
+        <td><input id="6" class="phimso" type="button" value="6" onclick="click6()"></td>
+        <td><input id="tru" class="phimso" type="button" value="-" onclick="tru()"></td>
+    </tr>
+    <tr>
+        <td><input id="7" class="phimso" type="button" value="7" onclick="click7()"></td>
+        <td><input id="8" class="phimso" type="button" value="8" onclick="click8()"></td>
+        <td><input id="9" class="phimso" type="button" value="9" onclick="click9()"></td>
+        <td><input id="nhan" class="phimso" type="button" value="X" onclick="nhan()"></td>
+    </tr>
+    <tr>
+        <td><input id="c" class="phimso" type="button"value="C" onclick="clickc()"></td>
+        <td><input id="0" class="phimso" type="button" value="0"onclick="click0()"></td>
+        <td><input id="bang" class="phimso" type="button" value="=" onclick="ketqua()"></td>
+        <td><input id="chia" class="phimso" type="button" value="/" onclick="chia()"></td>
+    </tr>
+
+<script>
+    let s = '';
+    let a =25;
+    
+    function click1() {
+        s += "1";
+        if (s.length<a){
+            document.getElementById("text").innerText = s;
+        } else {
+            document.getElementById("text").innerText = s.slice(s.length - a,s.length);
+        }
+    }
+    function click2() {
+        s += "2";
+        if (s.length<a){
+            document.getElementById("text").innerText = s;
+        } else {
+            document.getElementById("text").innerText = s.slice(s.length - a,s.length);
+        }
+    }
+    function click3() {
+        s +="3";
+        if ( s.length <a){
+            document.getElementById("text").innerText = s;
+        } else {
+            document.getElementById("text") = s.slice(s.length - a, s.length);
+        }
+    }
+    function click4() {
+        s += "4";
+        if (s.length < a) {
+            document.getElementById("text").innerText =s;
+        } else {
+            document.getElementById("text")=s.slice(s.length -a, s.length);
+        }
+    }
+    function click5() {
+        s+= "5";
+        if (s.length < a) {
+            document.getElementById("text").innerText =s;
+        } else {
+            document.getElementById("text")=s.slice(s.length -a, s.length);
+        }
+    }
+    function click6() {
+        s += "6";
+        if (s.length < a) {
+            document.getElementById("text").innerText =s;
+        } else {
+            document.getElementById("text")=s.slice(s.length -a, s.length);
+        }
+    }
+    function click7() {
+        s+= "7";
+        if (s.length < a) {
+            document.getElementById("text").innerText =s;
+        } else {
+            document.getElementById("text")=s.slice(s.length -a, s.length);
+        }
+    }
+    function click8() {
+        s+= "8";
+        if (s.length < a) {
+            document.getElementById("text").innerText =s;
+        } else {
+            document.getElementById("text")=s.slice(s.length -a, s.length);
+        }
+    }
+    function click9() {
+        s+= "9";
+        if (s.length < a) {
+            document.getElementById("text").innerText =s;
+        } else {
+            document.getElementById("text")=s.slice(s.length -a, s.length);
+        }
+    }
+    function click0() {
+        s+= "0";
+        if (s.length < a) {
+            document.getElementById("text").innerText =s;
+        } else {
+            document.getElementById("text")=s.slice(s.length -a, s.length);
+        }
+    }
+    function cong() {
+        s+= "+";
+        if (s.length < a) {
+            document.getElementById("text").innerText =s;
+        } else {
+            document.getElementById("text")=s.slice(s.length -a, s.length);
+        }
+    }
+    function tru() {
+        s+= "-";
+        if (s.length < a) {
+            document.getElementById("text").innerText =s;
+        } else {
+            document.getElementById("text")=s.slice(s.length -a, s.length);
+        }
+    }
+    function nhan() {
+        s+= "*";
+        if (s.length < a) {
+            document.getElementById("text").innerText =s;
+        } else {
+            document.getElementById("text")=s.slice(s.length -a, s.length);
+        }
+    }
+    function chia() {
+        s+= "/";
+        if (s.length < a) {
+            document.getElementById("text").innerText =s;
+        } else {
+            document.getElementById("text")=s.slice(s.length -a, s.length);
+        }
+    }
+    function clickc() {
+        s = "";
+        if (s.length < a) {
+            document.getElementById("text").innerText =s;
+        } else {
+            document.getElementById("text")=s.slice(s.length -a, s.length);
+        }
+    }
+    function ketqua() {
+        let b = eval(s);
+        s+= "=" + b;
+        if (s.length < a) {
+            document.getElementById("text").innerText =s;
+        } else {
+            document.getElementById("text")=s.slice(s.length -a, s.length);
+        }
+        s=b;
+    }
+</script>
+</table>
+</fieldset>
+</body>
+</html>
